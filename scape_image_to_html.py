@@ -77,6 +77,12 @@ def generate_html(images, output_file, pageTitle, pageSubtitle):
                 max-width: 100%;
                 height: auto;
             }
+            @media print {
+                .gallery-item {
+                    page-break-inside: avoid;
+                    break-inside: avoid;
+                }
+            }
         </style>
     </head>
     <body>
